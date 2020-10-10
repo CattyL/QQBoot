@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QQMini.PluginFramework.Utility</name>
+    </assembly>
+    <members>
+        <member name="T:QQMini.PluginFramework.Utility.Core.BinaryReaderUtility">
+            <summary>
+            <see cref="T:System.IO.BinaryReader"/> 工具类
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginFramework.Utility.Core.BinaryReaderUtility.Length(System.IO.BinaryReader)">
+            <summary>
+            获取基础流的剩余长度
+            </summary>
+            <param name="binary"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QQMini.PluginFramework.Utility.Core.BinaryReaderUtility.ReadAll_Ex(System.IO.BinaryReader)">
+            <summary>
+            从字节数组中的指定点开始，从流中读取所有字节。
+            </summary>
+            <param name="binary">基础 <see cref="T:System.IO.BinaryWriter"/> 对象</param>
+            <returns>读入 buffer 的字节数。 如果可用的字节没有请求的那么多，此数可能小于所请求的字节数；如果到达了流的末尾，此数可能为零。</returns>
+            <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+            <exception cref="T:System.IO.IOException">出现 I/O 错误。</exception>
+        </member>
+        <member name="M:QQMini.PluginFramework.Utility.Core.BinaryReaderUtility.ReadBin_Ex(System.IO.BinaryReader,System.Int64)">
+            <summary>
+            从字节数组中的指定点开始，从流中读取指定字节长度。
+            </summary>
+            <param name="binary">基础 <see cref="T:System.IO.BinaryWriter"/> 对象</param>
+            <param name="len">要读取的字节数。</param>
+            <returns>读入 buffer 的字节数。 如果可用的字节没有请求的那么多，此数可能小于所请求的字节数；如果到达了流的末尾，此数可能为零。</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException">len 为负数。</exception>
+            <exception cref="T:System.ArgumentException">已解码要读取的字符数超过了边界。</exception>
+            <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+            <exception cref="T:System.IO.IOException">出现 I/O 错误。</exception>
+        </member>
+        <member name="M:QQMini.PluginFramework.Utility.Core.BinaryReaderUtility.ReadInt16_Ex(System.IO.BinaryReader)">
+            <summary>
+            从字节数组中的指定点开始，从流中读取 2 字节长度并反序为 <see cref="T:System.Int32"/> 值。
+            </summary>
+            <param name="binary">基础 <see cref="T:System.IO.BinaryWriter"/> 对象</param>
+            <returns>读入 2 字节的结果值，如果可用的字节没有那么多，此数可能小于所请求的字节数；如果到达了流的末尾，此数可能为零。</returns>
+            <exception cref="T:System.ArgumentException">已解码要读取的字符数超过了边界。</exception>
+            <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+            <exception cref="T:System.IO.IOException">出现 I/O 错误。</exception>
+        </member>
+        <member name="M:QQMini.PluginFramework.Utility.Core.BinaryReaderUtility.ReadInt32_Ex(System.IO.BinaryReader)">
+            <summary>
+            从字节数组中的指定点开始，从流中读取 4 字节长度并反序为 <see cref="T:System.Int32"/> 值。
+            </summary>
+            <param name="binary">基础 <see cref="T:System.IO.BinaryWriter"/> 对象</param>
+            <returns>读入 4 字节的结果值，如果可用的字节没有那么多，此数可能小于所请求的字节数；如果到达了流的末尾，此数可能为零。</returns>
+            <exception cref="T:System.ArgumentException">已解码要读取的字符数超过了边界。</exception>
+            <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+            <exception cref="T:System.IO.IOException">出现 I/O 错误。</exception>
+        </member>
+        <member name="M:QQMini.PluginFramework.Utility.Core.BinaryReaderUtility.ReadInt64_Ex(System.IO.BinaryReader)">
+            <summary>
+            从字节数组中的指定点开始，从流中读取 8 字节长度并反序为 <see cref="T:System.Int64"/> 值。
+            </summary>
+            <param name="binary">基础 <see cref="T:System.IO.BinaryWriter"/> 对象</param>
+            <returns>读入 8 字节的结果值，如果可用的字节没有那么多，此数可能小于所请求的字节数；如果到达了流的末尾，此数可能为零。</returns>
+            <exception cref="T:System.ArgumentException">已解码要读取的字符数超过了边界。</exception>
+            <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+            <exception cref="T:System.IO.IOException">出现 I/O 错误。</exception>
+        </member>
+        <member name="M:QQMini.PluginFramework.Utility.Core.BinaryReaderUtility.ReadToken_Ex(System.IO.BinaryReader)">
+            <summary>
+            从字节数组中的指定点开始，从流中读取指定字节长度。
+            </summary>
+            <param name="binary">基础 <see cref="T:System.IO.BinaryWriter"/> 对象</param>
+            <returns>读入 buffer 的字节数。 如果可用的字节没有请求的那么多，此数可能小于所请求的字节数；如果到达了流的末尾，此数可能为零。</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException">len 为负数。</exception>
+            <exception cref="T:System.ArgumentException">已解码要读取的字符数超过了边界。</exception>
+            <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+            <exception cref="T:System.IO.IOException">出现 I/O 错误。</exception>
+        </member>
+        <member name="M:QQMini.PluginFramework.Utility.Core.BinaryReaderUtility.ReadString_Ex(System.IO.BinaryReader,System.Text.Encoding)">
+            <summary>
+            从字节数组中的指定点开始，从流中读取指定编码的字符串。
+            </summary>
+            <param name="binary">基础 <see cref="T:System.IO.BinaryWriter"/> 对象</param>
+            <param name="encoding"></param>
+            <returns>读入 buffer 的字节数。 如果可用的字节没有请求的那么多，此数可能小于所请求的字节数；如果到达了流的末尾，此数可能为零。</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException">len 为负数。</exception>
+            <exception cref="T:System.ArgumentException">已解码要读取的字符数超过了边界。</exception>
+            <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+            <exception cref="T:System.IO.IOException">出现 I/O 错误。</exception>
+        </member>
+        <member name="T:QQMini.PluginFramework.Utility.Core.BinaryWriterUtility">
+            <summary>
+            <see cref="T:System.IO.BinaryWriter"/> 工具类
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginFramework.Utility.Core.BinaryWriterUtility.Write_Ex(System.IO.BinaryWriter,System.Int16)">
+            <summary>
+            将写入基础流的 <see cref="T:System.Int16"/> 数值
+            </summary>
+            <param name="binary">基础 <see cref="T:System.IO.BinaryWriter"/> 对象</param>
+            <param name="value">要写入的值</param>
+            <exception cref="T:System.IO.IOException">出现 I/O 错误。</exception>
+            <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+            <exception cref="T:System.ArgumentNullException">buffer 为 null。</exception>
+        </member>
+        <member name="M:QQMini.PluginFramework.Utility.Core.BinaryWriterUtility.Write_Ex(System.IO.BinaryWriter,System.Int32)">
+            <summary>
+            将写入基础流的 <see cref="T:System.Int32"/> 数值
+            </summary>
+            <param name="binary">基础 <see cref="T:System.IO.BinaryWriter"/> 对象</param>
+            <param name="value">要写入的值</param>
+            <exception cref="T:System.IO.IOException">出现 I/O 错误。</exception>
+            <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+            <exception cref="T:System.ArgumentNullException">buffer 为 null。</exception>
+        </member>
+        <member name="M:QQMini.PluginFramework.Utility.Core.BinaryWriterUtility.Write_Ex(System.IO.BinaryWriter,System.Int64)">
+            <summary>
+            将写入基础流的 <see cref="T:System.Int64"/> 数值
+            </summary>
+            <param name="binary">基础 <see cref="T:System.IO.BinaryWriter"/> 对象</param>
+            <param name="value">要写入的值</param>
+            <exception cref="T:System.IO.IOException">出现 I/O 错误。</exception>
+            <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+            <exception cref="T:System.ArgumentNullException">buffer 为 null。</exception>
+        </member>
+        <member name="M:QQMini.PluginFramework.Utility.Core.BinaryWriterUtility.Write_Ex(System.IO.BinaryWriter,System.String)">
+            <summary>
+            将写入基础流的 <see cref="T:System.String"/> 数值
+            </summary>
+            <param name="binary">基础 <see cref="T:System.IO.BinaryWriter"/> 对象</param>
+            <param name="value">要写入的值</param>
+            <exception cref="T:System.IO.IOException">出现 I/O 错误。</exception>
+            <exception cref="T:System.ObjectDisposedException">流已关闭。</exception>
+            <exception cref="T:System.ArgumentNullException">buffer 为 null。</exception>
+        </member>
+        <member name="M:QQMini.PluginFramework.Utility.Core.BinaryWriterUtility.ToArray(System.IO.BinaryWriter)">
+            <summary>
+            将基础流转换为相同的字节数组
+            </summary>
+            <param name="binary">基础 <see cref="T:System.IO.BinaryWriter"/> 对象</param>
+        </member>
+        <member name="T:QQMini.PluginFramework.Utility.Core.EnumUtility">
+            <summary>
+            枚举工具集
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginFramework.Utility.Core.EnumUtility.GetDescription(System.Enum)">
+            <summary>
+            读取 <see cref="T:System.Enum"/> 标记 <see cref="T:System.ComponentModel.DescriptionAttribute"/> 的值
+            </summary>
+            <param name="value">原始 <see cref="T:System.Enum"/> 值</param>
+            <returns>如果指定枚举有标注 <see cref="T:System.ComponentModel.DescriptionAttribute"/> 则返回 <see cref="P:System.ComponentModel.DescriptionAttribute.Description"/> 的值, 否则返回 <see cref="F:System.String.Empty"/></returns>
+        </member>
+        <member name="T:QQMini.PluginFramework.Utility.Core.IntPtrUtility">
+            <summary>
+            指针工具集
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginFramework.Utility.Core.IntPtrUtility.ToString(System.IntPtr,System.Text.Encoding)">
+            <summary>
+            读取指针内所有的字节数组并编码为指定字符串
+            </summary>
+            <param name="strPtr">字符串的 <see cref="T:System.IntPtr"/> 对象</param>
+            <param name="encoding">目标编码格式</param>
+            <returns></returns>
+        </member>
+        <member name="M:QQMini.PluginFramework.Utility.Core.IntPtrUtility.GetValue(System.IntPtr,System.Type)">
+            <summary>
+            读取指针内的数据, 将其转换为指定的类型
+            </summary>
+            <param name="dataPtr">数据的 <see cref="T:System.IntPtr"/> 对象</param>
+            <param name="changeType">要转换目标类型的 <see cref="T:System.Type"/></param>
+            <returns>从非托管内存中读取到的数据</returns>
+            <exception cref="T:System.AccessViolationException">试图访问受保护的内存</exception>
+            <exception cref="T:System.MissingMethodException">类型没有可访问的默认构造函数</exception>
+        </member>
+        <member name="T:QQMini.PluginFramework.Utility.Core.PathUtility">
+            <summary>
+            路径工具集
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginFramework.Utility.Core.PathUtility.GetAbsolutePath(System.String,System.String)">
+            <summary>
+            基于指定的父路径将相对路径转换为绝对路径
+            </summary>
+            <param name="baseDirectory">基础父路径</param>
+            <param name="filePath">需要转换的相对路径</param>
+            <returns>转换后的绝对路径</returns>
+            <exception cref="T:System.ArgumentNullException">baseDirectory 或 filePath 为 null</exception>
+        </member>
+        <member name="M:QQMini.PluginFramework.Utility.Core.PathUtility.GetFormatPath(System.String)">
+            <summary>
+            获取格式化后的路径
+            </summary>
+            <param name="path">需要格式化的路径字符串</param>
+            <returns>格式化后的路径</returns>
+        </member>
+        <member name="T:QQMini.PluginFramework.Utility.Core.ReflectionUtility">
+            <summary>
+            反射工具集
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginFramework.Utility.Core.ReflectionUtility.CreateInstance``1(System.Type,System.Object[])">
+            <summary>
+            创建一个指定类型的新实例
+            </summary>
+            <typeparam name="T">要创建实例的目标类型</typeparam>
+            <param name="type">要从中获取构造函数的类型 <see cref="T:System.Type"/></param>
+            <param name="args">要创建实例的构造函数参数列表</param>
+            <returns>如果成功创建指定类型的实例, 将返回转换为 T 的目标实例</returns>
+            <exception cref="T:System.ArgumentNullException">type 是 null</exception>
+            <exception cref="T:System.ArgumentException">type 是泛型</exception>
+            <exception cref="T:System.NotSupportedException">type 不能是 <see cref="T:System.TypedReference"/>、<see cref="T:System.Void"/>、<see cref="T:System.RuntimeArgumentHandle"/> 和 <see cref="T:System.Array"/> 这些类型 或者 最匹配的构造函数有可变参数</exception>
+            <exception cref="T:System.Reflection.TargetInvocationException">调用的构造函数抛出了异常</exception>
+            <exception cref="T:System.MethodAccessException">没有调用此构造函数的权限</exception>
+            <exception cref="T:System.MemberAccessException">无法创建抽象类的实例</exception>
+            <exception cref="T:System.Runtime.InteropServices.InvalidComObjectException">COM类型不是通过 <see cref="T:System.Type"/> 获得</exception>
+            <exception cref="T:System.MissingMethodException">没有找到相匹配的公共构造函数</exception>
+            <exception cref="T:System.Runtime.InteropServices.COMException">type 是 COM 对象, 但用于获取类型的标识符无效, 或标识的类未注册</exception>
+            <exception cref="T:System.TypeLoadException">type 不是有效类型</exception>
+        </member>
+        <member name="M:QQMini.PluginFramework.Utility.Core.ReflectionUtility.IsAssembly(System.String)">
+            <summary>
+            判断一个文件是否是可加载的程序集
+            </summary>
+            <param name="assemblyPath">程序集绝对路径</param>
+            <returns>如果可被加载返回 <see langword="true"/>, 否则返回 <see langword="false"/></returns>
+        </member>
+        <member name="M:QQMini.PluginFramework.Utility.Core.ReflectionUtility.IsAssemblyLoad(System.String)">
+            <summary>
+            判断一个文件是否是可加载的程序集
+            </summary>
+            <param name="assemblyPath">程序集绝对路径</param>
+            <returns>如果可被加载返回 <see langword="true"/>, 否则返回 <see langword="false"/></returns>
+        </member>
+        <member name="T:QQMini.PluginFramework.Utility.Core.StringUtility">
+            <summary>
+            字符串工具集
+            </summary>
+        </member>
+        <member name="M:QQMini.PluginFramework.Utility.Core.StringUtility.GetStringGCHandle(System.String,System.Text.Encoding)">
+            <summary>
+            获取当前对象的 <see cref="T:System.Runtime.InteropServices.GCHandle"/> 实例, 该实例为 <see cref="F:System.Runtime.InteropServices.GCHandleType.Pinned"/> 类型
+            </summary>
+            <param name="source">将转换的对象</param>
+            <param name="encoding">转换的编码</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
